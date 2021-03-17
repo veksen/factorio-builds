@@ -4,7 +4,7 @@ import Input from "../Input"
 
 interface IFormikInputProps extends FieldProps {
   id: string
-  type: "text" | "textarea"
+  type: "text" | "textarea" | "markdown"
   spellCheck?: boolean
   onKeyPress?: (
     e: React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>

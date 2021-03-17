@@ -103,6 +103,17 @@ const Step2Data: React.FC<IStep2DataProps> = (props) => {
         component={Input}
       />
 
+      <ReactMde
+        value={props.formikProps.values.description}
+        onChange={(value) => {
+          // console.log(editor)
+          // console.log(data)
+          console.log(value)
+          props.formikProps.setFieldValue("description", value)
+        }}
+        // toolbars={["bold", "italic", "header"]}
+      />
+
       <InputGroup
         legend={
           <>
